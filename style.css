@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(74,74,120);
+	padding: 1.5rem 2rem;
+	position: fixed;
+	top: 0;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.main {
+	margin:7rem 1.5rem 2.5rem 2.5rem;
+	padding:  1rem 4rem;
+}
+
+.nav-items {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.nav-items a {
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: white;
+}
+
+.nav-items a:hover, .nav-items a.active {
+	background-color: rgb(211,211,230);
+	color: black;
+}
+
+.home p {
+	font-family: system-ui;
+	font-size: 1.5rem;
+	padding: 2rem 0rem;
+}
+
+.home .quote {
+	font-size: 3.5rem;
+	font-family: 'Times New Roman';
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-family: system-ui;
+}
+
+.about-me h3 {
+	font-size: 1.2rem;
+	padding-top: 3rem;
+	padding-bottom:1rem;
+	font-family: system-ui;
+}
+
+p {
+	font-size: 1.2rem;
+	font-family: serif;
+}
+
+.about-me li {
+	font-size: 1.2rem;
+	font-family: serif;
+}
+
+.about-me a {
+	text-decoration: none;
+	color: red;
+}
+
+.about-me a:hover {
+	color: blue;
+}
+
+.contact-me p {
+	padding-top: 2rem;
+}
+
+.contact-form {
+	width: 100%;
+	display: block;
+	margin: 2rem auto;
+}
+
+label {
+	font-size: 1.2rem;
+	font-family: serif;
+	font-weight: bolder;
+}
+
+input,textarea {
+	font-family: serif;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	background: #f7f7f7;
+	border-radius: 5px;
+	width: 100%;
+	padding: 8px 8px;
+	border: 0;
+}
+
+.submit {
+	width: 25%;
+	background-color: lightblue;
+	font-weight: bolder;
+}
+
+.submit input:hover {
+	background-color: lightpink;
+}
+
+.submit {
+	width: 20%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa {
+	padding: 0.5rem 2rem;
+	width: 2.5rem;
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+.contact-me a {
+	font-size: 2.5rem;
+}
+
+.container{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+
+.container .my-gallery{
+	width: 100%;
+	padding-bottom:3rem;
+}
+
+.container .box{
+	display: flex;
+	flex-direction:column;
+}
+
+.container .box .dream{
+	width:100%;
+}
+
+.container .box .dream img{
+	width:100%;
+	padding-bottom:5rem;
+}
+
+@media screen and (min-width: 500px) {
+	.container .box{
+		display:flex;
+		flex-direction:row;
+		justify-content: space-evenly;
+	}
+
+	.container .box .dream{
+		display: flex;
+		flex-direction: column;
+		width:40%;
+	}
+
+	.container .my-gallery{
+		width: 50%;
+	}
+
+	.contact-form {
+		width: 50%;
+	}
+
+	.fa {
+		float: right;
+	}
+}
